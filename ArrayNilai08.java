@@ -8,10 +8,14 @@ public class ArrayNilai08 {
         for (int i = 0; i < 10; i++) {
             System.out.print("Masukkan Nilai Akhir ke-" + i + " : ");
             nilaiAkhir[i] = sc.nextInt();
-            
+
         }
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Nilai Akhir ke-" + i + " adalah " + nilaiAkhir[i]);
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("Mahasiswa ke-" + i + "Lulus!");
+            } else {
+                System.out.println("Mahasiswa ke-" + i + "Tidak Lulus!");
+            }
         }
     }
 }
